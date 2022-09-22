@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    /* PRODUCT COLORS */
+    --theme-highlight: #0D0D82;
+    --theme-100: #304CD1;
+    --theme-80: #4D68EB;
+    --theme-60: #6E86FF;
+    --theme-40: #A1B0FF;
+    --theme-20: #D4DBFF;
+    --theme-10: #EDF0FF;
+
+    /* GREY COLORS */
+    --grey-1: #FEFEFE;
+    --grey-2: #F5F6F8; /* Highlights;*/
+    --grey-3: #EDEFF5; /* Backgrounds; */
+    --grey-4: #DCE0ED; /* Borders, Hovers; */
+    --grey-5: #CACFD9;
+    --grey-6: #A3AABC; /* Disabled texts; */
+    --grey-7: #7A8193; /* Secondary texts; */
+    --grey-8: #393F4D; /* Main texts; */
+
+    --white: #fff;
+    --black: #000;
+
+    /* SHADOWS */
+    --shadow-1: #00000026;
+    --shadow-2: #00000019;
+    --shadow-3: #00000026;
+    --shadow-4: #00000026;
+    --shadow-5: #00000026;
+    --shadow-6: #00000026;
+
+    /* STATE COLORS */
+    /* info */
+    --info-highlight: #0061E6;
+    --info-100: #0064FF; /* Informative messages, Links, Buttons in neutral platforms; */
+    --info-80: #3385FF;
+    --info-60: #66A3FF;
+    --info-40: #99C2FF;
+    --info-20: #CCE0FF;
+    --info-10: #E6F0FF;
+    /* error */
+    --error-highlight: #82061B;
+    --error-100: #CF0A2C; /* Critical or negative messages and states, Errors; */
+    --error-80: #D93B56;
+    --error-60: #E26C80;
+    --error-40: #EC9DAB;
+    --error-20: #F5CED5;
+    --error-10: #FAE6EA;
+    /* warning */
+    --warning-highlight: #B06A22;
+    --warning-100: #EF912F; /* Alert messages and states; */
+    --warning-80: #F2A759;
+    --warning-60: #F5BD82;
+    --warning-40: #F9D3AC;
+    --warning-20: #FCE9D5;
+    --warning-10: #FDF4EA;
+    /* success */
+    --success-highlight: #22A876;
+    --success-100: #2CD696; /* Positive messages and states; */
+    --success-80: #56DEAB;
+    --success-60: #80E6C0;
+    --success-40: #ABEFD5;
+    --success-20: #D5F7EA;
+    --success-10: #EAFBF4;
+}
