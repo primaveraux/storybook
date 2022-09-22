@@ -1,0 +1,13 @@
+<a href="{{url}}" *ngIf="!loading">
+    <button class="{{size}} {{type}} {{color}} {{extraClasses}}" [attr.disabled]="isDisabled ? '' : null" title="{{text}}">
+        <i *ngIf="icon" class="{{icon}}"></i>
+        {{text}}
+        <span *ngIf="count">{{count}}</span>
+        <i *ngIf="nextButton" class="ti-ux-arrow-right"></i>
+    </button>
+</a>
+
+<button *ngIf="loading" class="{{size}} {{type}} {{color}} loading {{extraClasses}}" [attr.disabled]="isDisabled ? '' : null" title="{{text}}">
+    <div class="loading-dot-1"></div>
+    <div class="loading-dot-2"></div>
+</button>
