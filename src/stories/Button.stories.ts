@@ -9,6 +9,8 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   argTypes: {
     color: {
+      name: "Color",
+      description: "Select this button's color.",
       control: {
         type: 'select',
         options: ['theme', 'grey', 'info', 'error', 'warning', 'success', 'white', 'black'],
@@ -25,6 +27,8 @@ export default {
       },
     },
     type: {
+      name: "Type",
+      description: "Select this button's type.",
       control: {
         type: 'select',
         options: ['primaryFilled', 'primaryOutlined', 'secondaryFilled', 'secondaryOutlined', 'tertiary'],
@@ -38,6 +42,8 @@ export default {
       },
     },
     size: {
+      name: "Size",
+      description: "Select this button's size.",
       control: {
         type: 'select',
         options: ['small', 'default', 'large'],
@@ -47,6 +53,38 @@ export default {
           large: 'Large',
         },
       },
+    },
+    count: {
+      name: "Count",
+      description: "Number that will appear after the button's text."
+    },
+    extraClasses: {
+      name: "Extra Classes",
+      description: "Insert any custom CSS classes that you wish the button to have."
+    },
+    icon: {
+      name: "Icon",
+      description: "Insert Pollen icons class name."
+    },
+    isDisabled: {
+      name: "Is Disabled",
+      description: "Select if the button is disabled or not."
+    },
+    loading: {
+      name: "Loading",
+      description: "Select if the button should show the loading animation or not."
+    },
+    nextButton: {
+      name: "Next Button",
+      description: "Select if the button should show the 'next' arrow after it's text."
+    },
+    url: {
+      name: "URL",
+      description: "Insert the URL to where this button should point to."
+    },
+    text: {
+      name: "Text",
+      description: "Insert this button's text."
     },
   },
 } as Meta;
