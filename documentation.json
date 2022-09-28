@@ -82,7 +82,7 @@
                 "args": [],
                 "line": 11
             },
-            "templateData": "<pri-button></pri-button>\n<br>\n<pri-input-field size=\"small\" label=\"Entidade (com valor)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" help=\"Helpful tip about this input\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (sem valor)\" placeholder=\"Ex: João Peixoto\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (com erro)\" placeholder=\"Ex: João Peixoto\" [hasError]=\"true\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (desativado)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" [isDisabled]=\"true\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (com link de detalhe)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" detailLabel=\"Ver detalhe\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (com descrição)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" description=\"Some short message about the information of this input to help the user to fill it.\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Entidade (com tag)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" tag=\"00efhedthb1\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Cartão de Crédito\" value=\"444444444444\" placeholder=\"Ex: João Peixoto\" type=\"creditCard\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Identificação (com select sem imagens)\" value=\"4D8G84J2ND1\" placeholder=\"Ex: João Peixoto\" [options]=\"documents\" option=\"passport\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Telefone (com select com imagens)\" value=\"912345678\" placeholder=\"Ex: João Peixoto\" [options]=\"indicativos\" option=\"uk\" type=\"phone\"></pri-input-field><br>\n<pri-input-field size=\"small\" label=\"Ficheiro (upload de ficheiros)\" placeholder=\"Ex: João Peixoto\" type=\"file\"></pri-input-field><br>"
+            "templateData": "<pri-button></pri-button>\n<br>\n<pri-input-field label=\"Entidade (com valor)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" help=\"Helpful tip about this input\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (sem valor)\" placeholder=\"Ex: João Peixoto\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (com erro)\" placeholder=\"Ex: João Peixoto\" [hasError]=\"true\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (desativado)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" [isDisabled]=\"true\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (com link de detalhe)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" detailLabel=\"Ver detalhe\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (com descrição)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" description=\"Some short message about the information of this input to help the user to fill it.\"></pri-input-field><br>\n<pri-input-field label=\"Entidade (com tag)\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" tag=\"00efhedthb1\"></pri-input-field><br>\n<pri-input-field label=\"Cartão de Crédito\" value=\"444444444444\" placeholder=\"Ex: João Peixoto\" type=\"creditCard\"></pri-input-field><br>\n<pri-input-field label=\"Icon\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" icon=\"ti-ux-catalog-outline\"></pri-input-field><br>\n<pri-input-field label=\"Imagem\" value=\"Diana Mendes\" placeholder=\"Ex: João Peixoto\" image=\"../assets/flags/es.svg\"></pri-input-field><br>\n<pri-input-field label=\"Identificação (com select sem imagens)\" value=\"4D8G84J2ND1\" placeholder=\"Ex: João Peixoto\" [options]=\"documents\" option=\"passport\"></pri-input-field><br>\n<pri-input-field label=\"Telefone (com select com imagens)\" value=\"912345678\" placeholder=\"Ex: João Peixoto\" [options]=\"indicativos\" option=\"uk\" type=\"phone\"></pri-input-field><br>\n<pri-input-field label=\"Ficheiro (upload de ficheiros)\" placeholder=\"Ex: João Peixoto\" type=\"file\"></pri-input-field><br>"
         },
         {
             "name": "ButtonComponent",
@@ -239,7 +239,7 @@
         },
         {
             "name": "InputFieldComponent",
-            "id": "component-InputFieldComponent-7c1cead1f1d269ed4831b636e953818fe1e2354d60be381852885fb514656abdc4c607a4f6867ee7b2438c48381773c89b4c92fe9f6706e0696867d67dd7bd0b",
+            "id": "component-InputFieldComponent-261764c9277ecb45035a1825ad189ac06114dd42fc1fc4c256e73b36804a560c92785c793649c8c61ac011ded9d0edf34d34c01a9be3b7c3011d7d028667bdb3",
             "file": "src/input-field/input-field.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -257,15 +257,6 @@
             "viewProviders": [],
             "inputsClass": [
                 {
-                    "name": "creditCardImage",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 28,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
                     "name": "description",
                     "defaultValue": "''",
                     "deprecated": false,
@@ -279,7 +270,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 29,
+                    "line": 30,
                     "type": "string",
                     "decorators": []
                 },
@@ -288,16 +279,16 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 30,
+                    "line": 31,
                     "type": "string",
                     "decorators": []
                 },
                 {
                     "name": "errorMessage",
-                    "defaultValue": "'Please fill, it can\\'t be empty'",
+                    "defaultValue": "`Please fill, it can't be empty`",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
+                    "line": 29,
                     "type": "string",
                     "decorators": []
                 },
@@ -315,7 +306,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 28,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -329,6 +320,15 @@
                     "decorators": []
                 },
                 {
+                    "name": "icon",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
                     "name": "id",
                     "defaultValue": "''",
                     "deprecated": false,
@@ -338,11 +338,20 @@
                     "decorators": []
                 },
                 {
+                    "name": "image",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
                     "name": "isDisabled",
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 27,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -369,7 +378,7 @@
                     "defaultValue": "[]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 31,
+                    "line": 32,
                     "type": "any[]",
                     "decorators": []
                 },
@@ -379,15 +388,6 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "selectOptions",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 32,
                     "type": "string",
                     "decorators": []
                 },
@@ -739,11 +739,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { AfterViewInit, Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';\n\n@Component({\n  selector: 'pri-input-field',\n  templateUrl: './input-field.component.html',\n  styleUrls: ['./input-field.component.scss']\n})\nexport class InputFieldComponent implements AfterViewInit, OnChanges {\n\n  extraStyles: {};\n  selectStyles: {};\n  printedValue: string;\n  ccImage: string;\n  selectIsOpen: boolean;\n  selectedOption: any;\n\n  @Input() id = '';\n  @Input() value = '';\n  @Input() label = '';\n  @Input() placeholder = '';\n  @Input() extraClasses = '';\n  @Input() description = '';\n  @Input() help = '';\n  @Input() tag = '';\n  @Input() isDisabled = false;\n  @Input() hasError = false;\n  @Input() errorMessage = 'Please fill, it can\\'t be empty';\n  @Input() creditCardImage = false;\n  @Input() detailLabel = '';\n  @Input() detailUrl = '';\n  @Input() options: any[] = []; // Format: [{value: 'passport', label: 'Passport', image: 'path/to/image.svg', selected: true|false}]\n  @Input() selectOptions = ''; // each option can have an image\n  @Input() option = '';\n  @Input() type = 'text'; // text | file | number | password | creditCard | phone\n  @Input() size = 'regular'; // small | regular | large\n\n  constructor() {\n    this.extraStyles = {};\n    this.selectStyles = {};\n    this.printedValue = this.value;\n    this.ccImage = \"\";\n    this.selectIsOpen = false;\n    this.selectedOption = { value: '', label: '', image: '' };\n\n    this.creditCardType();\n  }\n\n  @ViewChild('detailEl')\n  detailEl: ElementRef = ViewChild('detailEl');\n\n  @ViewChild('tagEl')\n  tagEl: ElementRef = ViewChild('tagEl');\n\n  @ViewChild('selectEl')\n  selectEl: ElementRef = ViewChild('selectEl');\n\n  @ViewChild('dropdownEl')\n  dropdownEl: ElementRef = ViewChild('dropdownEl');\n\n  ngOnChanges() {\n    this.updateSelectedOptions();\n  }\n\n  ngAfterViewInit() {\n    this.setExtraStyles();\n\n    if (this.type == 'creditCard' || this.type == 'phone')\n      this.formatValue(this.type);\n  }\n\n  setExtraStyles(): void {\n    // Add styles if the field has a detail's link\n    if (this.detailLabel && typeof this.detailEl == 'object') {\n      let detailWidth = this.detailEl.nativeElement.offsetWidth + (this.detailEl.nativeElement.offsetWidth * 0.08) + 24;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-right': detailWidth + 'px'\n      };\n    }\n\n    // Add styles if the field has a tag\n    if (this.tag && typeof this.tagEl == 'object') {\n      let tagWidth = this.tagEl.nativeElement.offsetWidth + (this.tagEl.nativeElement.offsetWidth * 0.08) + 14;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-left': tagWidth + 'px'\n      };\n    }\n\n    // Add styles if the field has options\n    // Assign the \"selected\" attribute if an option is selected\n    if (this.options.length && typeof this.selectEl == 'object') {\n      let extraWidth = 40;\n      let extraPadding = 55;\n\n      if (this.size == 'small') {\n        extraWidth = 25;\n        extraPadding = 35;\n      } else if (this.size == 'large') {\n        extraWidth = 50;\n        extraPadding = 65;\n      }\n\n      let selectWidth = this.dropdownEl.nativeElement.offsetWidth + extraWidth;\n      let selectPadding = this.dropdownEl.nativeElement.offsetWidth + extraPadding;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-left': selectPadding + 'px'\n      };\n\n      this.selectStyles = {\n        ...this.selectStyles,\n        'width': selectWidth + 'px'\n      }\n    }\n  }\n\n  updateSelectedOptions() {\n    if (this.options.length) {\n      let selectedOptions = 0;\n      this.options.forEach((option, key) => {\n        if (option.value == this.option) {\n          this.options[key] = {\n            ...this.options[key],\n            selected: true\n          }\n\n          this.selectedOption = { value: this.options[key].value, label: this.options[key].label, image: this.options[key].image };\n\n          selectedOptions++;\n        } else {\n          this.options[key] = {\n            ...this.options[key],\n            selected: false\n          }\n        }\n      });\n\n      if (!selectedOptions) {\n        this.selectedOption = { value: this.options[0].value, label: this.options[0].label, image: this.options[0].image };\n      }\n    }\n  }\n\n  toggleSelectOpen() {\n    this.selectIsOpen = !this.selectIsOpen;\n  }\n\n  selectValue(value: string) {\n    this.option = value;\n    this.updateSelectedOptions();\n    this.toggleSelectOpen();\n  }\n\n  // Return what credit card type the passed string is\n  // https://stackoverflow.com/questions/5911236/identify-card-type-from-card-number\n  creditCardType(): void {\n    // visa\n    var re = new RegExp(\"^4\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"VISA\";\n\n    // Mastercard \n    // Updated for Mastercard 2017 BINs expansion\n    if (/^(5[1-5][0-9]{14}|2(22[1-9][0-9]{12}|2[3-9][0-9]{13}|[3-6][0-9]{14}|7[0-1][0-9]{13}|720[0-9]{12}))$/.test(this.value))\n      this.ccImage = \"MASTERCARD\";\n\n    // AMEX\n    re = new RegExp(\"^3[47]\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"AMEX\";\n\n    // Discover\n    re = new RegExp(\"^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DISCOVER\";\n\n    // Diners\n    re = new RegExp(\"^36\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DINERS\";\n\n    // Diners - Carte Blanche\n    re = new RegExp(\"^30[0-5]\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DINERS\";\n\n    // JCB\n    re = new RegExp(\"^35(2[89]|[3-8][0-9])\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"JCB\";\n\n    // Visa Electron\n    re = new RegExp(\"^(4026|417500|4508|4844|491(3|7))\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"VISA_ELECTRON\";\n  }\n\n  formatValue(type: string) {\n\n    let charNumber = 4;\n\n    switch (type) {\n      case 'creditCard':\n        charNumber = 4;\n        break;\n      case 'phone':\n        charNumber = 3;\n        break;\n      default:\n        charNumber = 4;\n        break;\n    }\n\n    if (!this.printedValue) {\n      this.printedValue = this.value;\n    }\n\n    var v = this.printedValue.replace(/\\s+/g, '').replace(/[^0-9]/gi, '')\n    var matches = v.match(/\\d{4,18}/g);\n    var match = matches && matches[0] || ''\n    var parts = []\n\n    for (let i = 0, len = match.length; i < len; i += charNumber) {\n      parts.push(match.substring(i, i + charNumber))\n    }\n\n    if (parts.length) {\n      this.printedValue = parts.join(' ')\n    } else {\n      this.printedValue = this.printedValue;\n    }\n\n    this.creditCardType();\n    this.reformatField();\n  }\n\n  // Format the CC number that is inserted in the input\n  formatFieldInput(event: { which: any; keyCode: any; }, type: string = 'creditCard') {\n    var code = (event.which) ? event.which : event.keyCode;\n\n    this.reformatField();\n\n    if ((code < 48 || code > 57) && (code > 31)) {\n      return false;\n    }\n\n    this.formatValue(type);\n\n    return true;\n  }\n\n  // Remove the spaces from the inserted CC number\n  reformatField() {\n    this.value = this.printedValue.replace(/\\s/g, '');\n  }\n\n  // Clear the value variable\n  clearValue() {\n    this.value = \"\";\n  }\n\n}\n",
+            "sourceCode": "import { AfterViewInit, Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';\n\n@Component({\n  selector: 'pri-input-field',\n  templateUrl: './input-field.component.html',\n  styleUrls: ['./input-field.component.scss']\n})\nexport class InputFieldComponent implements AfterViewInit, OnChanges {\n\n  extraStyles: {};\n  selectStyles: {};\n  printedValue: string;\n  ccImage: string;\n  selectIsOpen: boolean;\n  selectedOption: any;\n\n  @Input() id = '';\n  @Input() value = '';\n  @Input() label = '';\n  @Input() placeholder = '';\n  @Input() extraClasses = '';\n  @Input() description = '';\n  @Input() help = '';\n  @Input() tag = '';\n  @Input() icon = '';\n  @Input() image = '';\n  @Input() isDisabled = false;\n  @Input() hasError = false;\n  @Input() errorMessage = `Please fill, it can't be empty`;\n  @Input() detailLabel = '';\n  @Input() detailUrl = '';\n  @Input() options: any[] = []; // Format: [{value: 'passport', label: 'Passport', image: 'path/to/image.svg', selected: true|false}]\n  @Input() option = '';\n  @Input() type = 'text'; // text | file | number | password | creditCard | phone\n  @Input() size = 'regular'; // small | regular | large\n\n  constructor() {\n    this.extraStyles = {};\n    this.selectStyles = {};\n    this.printedValue = this.value;\n    this.ccImage = \"\";\n    this.selectIsOpen = false;\n    this.selectedOption = { value: '', label: '', image: '' };\n\n    this.creditCardType();\n  }\n\n  @ViewChild('detailEl')\n  detailEl: ElementRef = ViewChild('detailEl');\n\n  @ViewChild('tagEl')\n  tagEl: ElementRef = ViewChild('tagEl');\n\n  @ViewChild('selectEl')\n  selectEl: ElementRef = ViewChild('selectEl');\n\n  @ViewChild('dropdownEl')\n  dropdownEl: ElementRef = ViewChild('dropdownEl');\n\n  ngOnChanges() {\n    this.updateSelectedOptions();\n  }\n\n  ngAfterViewInit() {\n    this.setExtraStyles();\n\n    if (this.type == 'creditCard' || this.type == 'phone')\n      this.formatValue(this.type);\n  }\n\n  setExtraStyles(): void {\n    // Add styles if the field has a detail's link\n    if (this.detailLabel && typeof this.detailEl == 'object') {\n      let detailWidth = this.detailEl.nativeElement.offsetWidth + (this.detailEl.nativeElement.offsetWidth * 0.08) + 24;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-right': detailWidth + 'px'\n      };\n    }\n\n    // Add styles if the field has a tag\n    if (this.tag && typeof this.tagEl == 'object') {\n      let tagWidth = this.tagEl.nativeElement.offsetWidth + (this.tagEl.nativeElement.offsetWidth * 0.08) + 14;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-left': tagWidth + 'px'\n      };\n    }\n\n    // Add styles if the field has options\n    // Assign the \"selected\" attribute if an option is selected\n    if (this.options.length && typeof this.selectEl == 'object') {\n      let extraWidth = 40;\n      let extraPadding = 55;\n\n      if (this.size == 'small') {\n        extraWidth = 25;\n        extraPadding = 35;\n      } else if (this.size == 'large') {\n        extraWidth = 50;\n        extraPadding = 65;\n      }\n\n      let selectWidth = this.dropdownEl.nativeElement.offsetWidth + extraWidth;\n      let selectPadding = this.dropdownEl.nativeElement.offsetWidth + extraPadding;\n\n      this.extraStyles = {\n        ...this.extraStyles,\n        'min-width': '300px',\n        'padding-left': selectPadding + 'px'\n      };\n\n      this.selectStyles = {\n        ...this.selectStyles,\n        'width': selectWidth + 'px'\n      }\n    }\n  }\n\n  updateSelectedOptions() {\n    if (this.options.length) {\n      let selectedOptions = 0;\n      this.options.forEach((option, key) => {\n        if (option.value == this.option) {\n          this.options[key] = {\n            ...this.options[key],\n            selected: true\n          }\n\n          this.selectedOption = { value: this.options[key].value, label: this.options[key].label, image: this.options[key].image };\n\n          selectedOptions++;\n        } else {\n          this.options[key] = {\n            ...this.options[key],\n            selected: false\n          }\n        }\n      });\n\n      if (!selectedOptions) {\n        this.selectedOption = { value: this.options[0].value, label: this.options[0].label, image: this.options[0].image };\n      }\n    }\n  }\n\n  toggleSelectOpen() {\n    this.selectIsOpen = !this.selectIsOpen;\n  }\n\n  selectValue(value: string) {\n    this.option = value;\n    this.updateSelectedOptions();\n    this.toggleSelectOpen();\n  }\n\n  // Return what credit card type the passed string is\n  // https://stackoverflow.com/questions/5911236/identify-card-type-from-card-number\n  creditCardType(): void {\n    // visa\n    var re = new RegExp(\"^4\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"VISA\";\n\n    // Mastercard \n    // Updated for Mastercard 2017 BINs expansion\n    if (/^(5[1-5][0-9]{14}|2(22[1-9][0-9]{12}|2[3-9][0-9]{13}|[3-6][0-9]{14}|7[0-1][0-9]{13}|720[0-9]{12}))$/.test(this.value))\n      this.ccImage = \"MASTERCARD\";\n\n    // AMEX\n    re = new RegExp(\"^3[47]\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"AMEX\";\n\n    // Discover\n    re = new RegExp(\"^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DISCOVER\";\n\n    // Diners\n    re = new RegExp(\"^36\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DINERS\";\n\n    // Diners - Carte Blanche\n    re = new RegExp(\"^30[0-5]\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"DINERS\";\n\n    // JCB\n    re = new RegExp(\"^35(2[89]|[3-8][0-9])\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"JCB\";\n\n    // Visa Electron\n    re = new RegExp(\"^(4026|417500|4508|4844|491(3|7))\");\n    if (this.value.match(re) != null)\n      this.ccImage = \"VISA_ELECTRON\";\n  }\n\n  formatValue(type: string) {\n\n    let charNumber = 4;\n\n    switch (type) {\n      case 'creditCard':\n        charNumber = 4;\n        break;\n      case 'phone':\n        charNumber = 3;\n        break;\n      default:\n        charNumber = 4;\n        break;\n    }\n\n    if (!this.printedValue) {\n      this.printedValue = this.value;\n    }\n\n    var v = this.printedValue.replace(/\\s+/g, '').replace(/[^0-9]/gi, '')\n    var matches = v.match(/\\d{4,18}/g);\n    var match = matches && matches[0] || ''\n    var parts = []\n\n    for (let i = 0, len = match.length; i < len; i += charNumber) {\n      parts.push(match.substring(i, i + charNumber))\n    }\n\n    if (parts.length) {\n      this.printedValue = parts.join(' ')\n    } else {\n      this.printedValue = this.printedValue;\n    }\n\n    this.creditCardType();\n    this.reformatField();\n  }\n\n  // Format the CC number that is inserted in the input\n  formatFieldInput(event: { which: any; keyCode: any; }, type: string = 'creditCard') {\n    var code = (event.which) ? event.which : event.keyCode;\n\n    this.reformatField();\n\n    if ((code < 48 || code > 57) && (code > 31)) {\n      return false;\n    }\n\n    this.formatValue(type);\n\n    return true;\n  }\n\n  // Remove the spaces from the inserted CC number\n  reformatField() {\n    this.value = this.printedValue.replace(/\\s/g, '');\n  }\n\n  // Clear the value variable\n  clearValue() {\n    this.value = \"\";\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "label{\r\n    display: block;\r\n    margin-bottom: 4px;\r\n    width: fit-content;\r\n    font-size: 14px;\r\n    line-height: 19px;\r\n    color: var(--grey-7);\r\n\r\n    & > i{\r\n        position: relative;\r\n        top: 2px;\r\n        font-size: 16px;\r\n\r\n        .help{\r\n            position: absolute;\r\n            left: calc(100% + 8px);\r\n            padding: 4px 6px;\r\n            width: 100px;\r\n            font-size: 12px;\r\n            line-height: 12px;\r\n            letter-spacing: 0.24px;\r\n            color: var(--grey-1);\r\n            background-color: var(--grey-8);\r\n            border-radius: 4px;\r\n            box-sizing: border-box;\r\n            opacity: 0;\r\n            visibility: hidden;\r\n            transition: opacity 0.4s;\r\n            z-index: 1;\r\n        }\r\n\r\n        &:hover{\r\n            color: var(--grey-8);\r\n            \r\n            .help{\r\n                opacity: 1;\r\n                visibility: visible;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.input-field-wrapper{\r\n    position: relative;\r\n    display: inline-block;\r\n\r\n    input{\r\n        padding: 8px 12px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--grey-8);\r\n        background-color: var(--grey-1);\r\n        border: 1px solid var(--grey-4);\r\n        border-radius: 4px;\r\n        box-sizing: border-box;\r\n        transition: border-color 0.3s;\r\n\r\n        &::placeholder{\r\n            color: var(--grey-6);\r\n        }\r\n\r\n        &:hover:not(:disabled):not(.error){\r\n            border-color: var(--grey-5);\r\n        }\r\n\r\n        &:focus,\r\n        &:focus-visible{\r\n            outline: none;\r\n            border-color: var(--theme-100) !important;\r\n        }\r\n\r\n        &:disabled{\r\n            color: var(--grey-6);\r\n            background-color: var(--grey-3);\r\n        }\r\n\r\n        &.error{\r\n            border-color: var(--error-100);\r\n\r\n            &.error-clear{\r\n                padding-right: 25px;\r\n            }\r\n        }\r\n\r\n        &.credit-card{\r\n            padding-left: 41px;\r\n        }\r\n\r\n        &[type='file']{\r\n            overflow: hidden;\r\n            padding-left: 45px;\r\n            cursor: pointer;\r\n\r\n            &::file-selector-button{\r\n                display: none;\r\n            }\r\n        }\r\n    }\r\n\r\n    &.file{\r\n\r\n        &:before{\r\n            content: \"\\e908\";\r\n            position: absolute;\r\n            top: 1px;\r\n            left: 1px;\r\n            padding: 7px 11px;\r\n            height: calc(100% - 2px);\r\n            font-family: 'pollen';\r\n            font-size: 16px;\r\n            color: var(--grey-7);\r\n            background-color: var(--grey-4);\r\n            box-sizing: border-box;\r\n            border-radius: 4px 0 0 4px;\r\n            transition: background-color 0.3s, color 0.3s;\r\n            pointer-events: none;\r\n        }\r\n\r\n        &:hover:not(:disabled),\r\n        &:active:not(:disabled){\r\n            &:before{\r\n                background-color: var(--theme-20);\r\n                color: var(--grey-8);\r\n            }\r\n        }\r\n    }\r\n\r\n    .error-dismiss{\r\n        position: absolute;\r\n        top: 12px;\r\n        right: 9px;\r\n        font-size: 12px;\r\n        color: var(--error-100);\r\n        cursor: pointer;\r\n    }\r\n\r\n    a.input-detail{\r\n        display: block;\r\n        position: absolute;\r\n        top: 9px;\r\n        right: 12px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--theme-100);\r\n        text-decoration: none;\r\n    }\r\n\r\n    .tag{\r\n        position: absolute;\r\n        top: 6px;\r\n        left: 6px;\r\n        padding: 3px 4px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--grey-7);\r\n        background-color: var(--grey-3);\r\n        border-radius: 4px;\r\n    }\r\n\r\n    .credit-card-icon{\r\n        position: absolute;\r\n        top: 8px;\r\n        left: 12px;\r\n        font-size: 20px;\r\n        color: var(--grey-7);\r\n\r\n        img{\r\n            position: relative;\r\n            top: -3px;\r\n            width: 20px;\r\n            vertical-align: middle;\r\n            pointer-events: none;\r\n        }\r\n    }\r\n\r\n    .select{\r\n        position: absolute;\r\n        top: 6px;\r\n        left: 6px;\r\n        width: fit-content;\r\n\r\n        & > div:not(.dropdown){\r\n            display: flex;\r\n            align-items: center;\r\n            gap: 6px;\r\n            padding: 3px 24px 3px 4px;\r\n            font-size: 14px;\r\n            line-height: 19px;\r\n            color: var(--grey-7);\r\n            background-color: var(--grey-3);\r\n            border: 0;\r\n            border-radius: 4px;\r\n            box-sizing: border-box;\r\n            cursor: pointer;\r\n            transition: background-color 0.3s;\r\n\r\n            &:before{\r\n                content: \"\\e64b\";\r\n                position: absolute;\r\n                top: 3px;\r\n                right: 4px;\r\n                font-family: 'pollen';\r\n                font-size: 12px;\r\n                color: var(--grey-7);\r\n            }\r\n\r\n            &:hover{\r\n                background-color: var(--grey-4);\r\n            }\r\n        }\r\n\r\n        .dropdown{\r\n            position: relative;\r\n            top: 9px;\r\n            padding: 8px;\r\n            width: fit-content;\r\n            background-color: var(--grey-1);\r\n            border: 1px solid var(--grey-4);\r\n            border-radius: 4px;\r\n            opacity: 0;\r\n            visibility: hidden;\r\n            z-index: 1;\r\n            transition: opacity 0.3s;\r\n\r\n            .option{\r\n                display: flex;\r\n                flex-wrap: nowrap;\r\n                align-items: center;\r\n                gap: 6px;\r\n                padding: 4px 0;\r\n                font-size: 14px;\r\n                line-height: 19px;\r\n                color: var(--grey-7);\r\n                cursor: pointer;\r\n                transition: color 0.4s;\r\n\r\n                &:hover,\r\n                &.selected{\r\n                    color: var(--grey-8);\r\n                }\r\n            }\r\n        }\r\n\r\n        img{\r\n            height: 18px;\r\n        }\r\n\r\n        select{\r\n            display: none;\r\n        }\r\n\r\n        &.open{\r\n\r\n            & > div:not(.dropdown){\r\n\r\n                &:before{\r\n                    content: \"\\e648\";\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                opacity: 1;\r\n                visibility: visible;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.error-message{\r\n    margin-top: 2px;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: var(--grey-8);\r\n}\r\n\r\n.description{\r\n    padding-top: 4px;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: var(--grey-7);\r\n}\r\n\r\n.small{\r\n\r\n    label{\r\n        font-size: 12px;\r\n        line-height: 16px;\r\n\r\n        & > i{\r\n            top: 1px;\r\n            font-size: 12px;\r\n        }\r\n    }\r\n\r\n    .input-field-wrapper{\r\n        input{\r\n            padding: 4px 8px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n\r\n            &.credit-card{\r\n                padding-left: 30px;\r\n            }\r\n\r\n            &[type='file']{\r\n                padding-left: 40px;\r\n            }\r\n        }\r\n\r\n        .tag{\r\n            top: 4px;\r\n            left: 4px;\r\n            padding: 1px 4px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n        }\r\n\r\n        .input-detail{\r\n            top: 5px;\r\n            right: 8px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n        }\r\n\r\n        .credit-card-icon{\r\n            top: 5px;\r\n            left: 8px;\r\n            font-size: 16px;\r\n\r\n            img{\r\n                width: 16px;\r\n            }\r\n        }\r\n\r\n        .select{\r\n            top: 4px;\r\n            left: 4px;\r\n\r\n            & > div:not(.dropdown){\r\n                font-size: 12px;\r\n                line-height: 16px;\r\n                gap: 4px;\r\n                padding: 1px 20px 1px 4px;\r\n\r\n                &:before{\r\n                    top: 2px;\r\n                    font-size: 8px;\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                top: 7px;\r\n\r\n                .option{\r\n                    font-size: 12px;\r\n                    line-height: 16px;\r\n                }\r\n            }\r\n\r\n            img{\r\n                height: 12px;\r\n            }\r\n        }\r\n\r\n        &.file{\r\n\r\n            &:before{\r\n                padding: 5px 10px;\r\n                font-size: 12px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .description,\r\n    .error-message{\r\n        font-size: 10px;\r\n        line-height: 13px;\r\n    }\r\n}\r\n\r\n.large{\r\n\r\n    label{\r\n        font-size: 16px;\r\n        line-height: 21px;\r\n\r\n        & > i{\r\n\r\n            .help{\r\n                padding: 8px;\r\n                width: 120px;\r\n                font-size: 14px;\r\n                line-height: 12px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .input-field-wrapper{\r\n        input{\r\n            padding: 12px 16px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n\r\n            &.credit-card{\r\n                padding-left: 52px;\r\n            }\r\n\r\n            &[type='file']{\r\n                padding-left: 60px;\r\n            }\r\n        }\r\n\r\n        .tag{\r\n            top: 8px;\r\n            left: 8px;\r\n            padding: 4px 8px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n        }\r\n\r\n        .input-detail{\r\n            top: 12px;\r\n            right: 16px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n        }\r\n\r\n        .credit-card-icon{\r\n            top: 11px;\r\n            left: 16px;\r\n            font-size: 24px;\r\n\r\n            img{\r\n                top: -5px;\r\n                width: 24px;\r\n            }\r\n        }\r\n\r\n        .select{\r\n            top: 8px;\r\n            left: 8px;\r\n\r\n            & > div:not(.dropdown){\r\n                font-size: 16px;\r\n                line-height: 21px;\r\n                gap: 8px;\r\n                padding: 4px 28px 4px 8px;\r\n\r\n                &:before{\r\n                    top: 5px;\r\n                    right: 8px;\r\n                    font-size: 12px;\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                top: 13px;\r\n\r\n                .option{\r\n                    font-size: 16px;\r\n                    line-height: 21px;\r\n                }\r\n            }\r\n\r\n            img{\r\n                height: 20px;\r\n            }\r\n        }\r\n\r\n        &.file{\r\n\r\n            &:before{\r\n                padding: 10px 14px;\r\n                font-size: 20px;\r\n            }\r\n        }\r\n    }\r\n}",
+                    "data": "label{\r\n    display: block;\r\n    margin-bottom: 4px;\r\n    width: fit-content;\r\n    font-size: 14px;\r\n    line-height: 19px;\r\n    color: var(--grey-7);\r\n\r\n    & > i{\r\n        position: relative;\r\n        top: 2px;\r\n        font-size: 16px;\r\n\r\n        .help{\r\n            position: absolute;\r\n            left: calc(100% + 8px);\r\n            padding: 4px 6px;\r\n            width: 100px;\r\n            font-size: 12px;\r\n            line-height: 12px;\r\n            letter-spacing: 0.24px;\r\n            color: var(--grey-1);\r\n            background-color: var(--grey-8);\r\n            border-radius: 4px;\r\n            box-sizing: border-box;\r\n            opacity: 0;\r\n            visibility: hidden;\r\n            transition: opacity 0.4s;\r\n            z-index: 1;\r\n        }\r\n\r\n        &:hover{\r\n            color: var(--grey-8);\r\n            \r\n            .help{\r\n                opacity: 1;\r\n                visibility: visible;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.input-field-wrapper{\r\n    position: relative;\r\n    display: inline-block;\r\n\r\n    input{\r\n        padding: 8px 12px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--grey-8);\r\n        background-color: var(--grey-1);\r\n        border: 1px solid var(--grey-4);\r\n        border-radius: 4px;\r\n        box-sizing: border-box;\r\n        transition: border-color 0.3s;\r\n\r\n        &::placeholder{\r\n            color: var(--grey-6);\r\n        }\r\n\r\n        &:hover:not(:disabled):not(.error){\r\n            border-color: var(--grey-5);\r\n        }\r\n\r\n        &:focus,\r\n        &:focus-visible{\r\n            outline: none;\r\n            border-color: var(--theme-100) !important;\r\n        }\r\n\r\n        &:disabled{\r\n            color: var(--grey-6);\r\n            background-color: var(--grey-3);\r\n        }\r\n\r\n        &.error{\r\n            border-color: var(--error-100);\r\n\r\n            &.error-clear{\r\n                padding-right: 25px;\r\n            }\r\n        }\r\n\r\n        &.credit-card,\r\n        &.icon,\r\n        &.image{\r\n            padding-left: 41px;\r\n        }\r\n\r\n        &[type='file']{\r\n            overflow: hidden;\r\n            padding-left: 45px;\r\n            cursor: pointer;\r\n\r\n            &::file-selector-button{\r\n                display: none;\r\n            }\r\n        }\r\n    }\r\n\r\n    &.file{\r\n\r\n        &:before{\r\n            content: \"\\e908\";\r\n            position: absolute;\r\n            top: 1px;\r\n            left: 1px;\r\n            padding: 7px 11px;\r\n            height: calc(100% - 2px);\r\n            font-family: 'pollen';\r\n            font-size: 16px;\r\n            color: var(--grey-7);\r\n            background-color: var(--grey-4);\r\n            box-sizing: border-box;\r\n            border-radius: 4px 0 0 4px;\r\n            transition: background-color 0.3s, color 0.3s;\r\n            pointer-events: none;\r\n        }\r\n\r\n        &:hover:not(:disabled),\r\n        &:active:not(:disabled){\r\n            &:before{\r\n                background-color: var(--theme-20);\r\n                color: var(--grey-8);\r\n            }\r\n        }\r\n    }\r\n\r\n    .error-dismiss{\r\n        position: absolute;\r\n        top: 12px;\r\n        right: 9px;\r\n        font-size: 12px;\r\n        color: var(--error-100);\r\n        cursor: pointer;\r\n    }\r\n\r\n    a.input-detail{\r\n        display: block;\r\n        position: absolute;\r\n        top: 9px;\r\n        right: 12px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--theme-100);\r\n        text-decoration: none;\r\n    }\r\n\r\n    .tag{\r\n        position: absolute;\r\n        top: 6px;\r\n        left: 6px;\r\n        padding: 3px 4px;\r\n        font-size: 14px;\r\n        line-height: 19px;\r\n        color: var(--grey-7);\r\n        background-color: var(--grey-3);\r\n        border-radius: 4px;\r\n    }\r\n\r\n    .field-icon{\r\n        position: absolute;\r\n        top: 8px;\r\n        left: 12px;\r\n        font-size: 20px;\r\n        color: var(--grey-7);\r\n\r\n        img{\r\n            position: relative;\r\n            top: -3px;\r\n            width: 20px;\r\n            vertical-align: middle;\r\n            pointer-events: none;\r\n        }\r\n    }\r\n\r\n    .select{\r\n        position: absolute;\r\n        top: 6px;\r\n        left: 6px;\r\n        width: fit-content;\r\n\r\n        & > div:not(.dropdown){\r\n            display: flex;\r\n            align-items: center;\r\n            gap: 6px;\r\n            padding: 3px 24px 3px 4px;\r\n            font-size: 14px;\r\n            line-height: 19px;\r\n            color: var(--grey-7);\r\n            background-color: var(--grey-3);\r\n            border: 0;\r\n            border-radius: 4px;\r\n            box-sizing: border-box;\r\n            cursor: pointer;\r\n            transition: background-color 0.3s;\r\n\r\n            &:before{\r\n                content: \"\\e64b\";\r\n                position: absolute;\r\n                top: 3px;\r\n                right: 4px;\r\n                font-family: 'pollen';\r\n                font-size: 12px;\r\n                color: var(--grey-7);\r\n            }\r\n\r\n            &:hover{\r\n                background-color: var(--grey-4);\r\n            }\r\n        }\r\n\r\n        .dropdown{\r\n            position: relative;\r\n            top: 9px;\r\n            padding: 8px;\r\n            width: fit-content;\r\n            background-color: var(--grey-1);\r\n            border: 1px solid var(--grey-4);\r\n            border-radius: 4px;\r\n            opacity: 0;\r\n            visibility: hidden;\r\n            z-index: 1;\r\n            transition: opacity 0.3s;\r\n\r\n            .option{\r\n                display: flex;\r\n                flex-wrap: nowrap;\r\n                align-items: center;\r\n                gap: 6px;\r\n                padding: 4px 0;\r\n                font-size: 14px;\r\n                line-height: 19px;\r\n                color: var(--grey-7);\r\n                cursor: pointer;\r\n                transition: color 0.4s;\r\n\r\n                &:hover,\r\n                &.selected{\r\n                    color: var(--grey-8);\r\n                }\r\n            }\r\n        }\r\n\r\n        img{\r\n            height: 18px;\r\n        }\r\n\r\n        select{\r\n            display: none;\r\n        }\r\n\r\n        &.open{\r\n\r\n            & > div:not(.dropdown){\r\n\r\n                &:before{\r\n                    content: \"\\e648\";\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                opacity: 1;\r\n                visibility: visible;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.error-message{\r\n    margin-top: 2px;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: var(--grey-8);\r\n}\r\n\r\n.description{\r\n    padding-top: 4px;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    color: var(--grey-7);\r\n}\r\n\r\n.small{\r\n\r\n    label{\r\n        font-size: 12px;\r\n        line-height: 16px;\r\n\r\n        & > i{\r\n            top: 1px;\r\n            font-size: 12px;\r\n        }\r\n    }\r\n\r\n    .input-field-wrapper{\r\n        input{\r\n            padding: 4px 8px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n\r\n            &.credit-card,\r\n            &.icon,\r\n            &.image{\r\n                padding-left: 30px;\r\n            }\r\n\r\n            &[type='file']{\r\n                padding-left: 40px;\r\n            }\r\n\r\n            &.error-clear{\r\n                padding-right: 25px;\r\n            }\r\n        }\r\n\r\n        .error-dismiss{\r\n            top: 7px;\r\n        }\r\n\r\n        .tag{\r\n            top: 4px;\r\n            left: 4px;\r\n            padding: 1px 4px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n        }\r\n\r\n        .input-detail{\r\n            top: 5px;\r\n            right: 8px;\r\n            font-size: 12px;\r\n            line-height: 16px;\r\n        }\r\n\r\n        .field-icon{\r\n            top: 5px;\r\n            left: 8px;\r\n            font-size: 16px;\r\n\r\n            img{\r\n                width: 16px;\r\n            }\r\n        }\r\n\r\n        .select{\r\n            top: 4px;\r\n            left: 4px;\r\n\r\n            & > div:not(.dropdown){\r\n                font-size: 12px;\r\n                line-height: 16px;\r\n                gap: 4px;\r\n                padding: 1px 20px 1px 4px;\r\n\r\n                &:before{\r\n                    top: 2px;\r\n                    font-size: 8px;\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                top: 7px;\r\n\r\n                .option{\r\n                    font-size: 12px;\r\n                    line-height: 16px;\r\n                }\r\n            }\r\n\r\n            img{\r\n                height: 12px;\r\n            }\r\n        }\r\n\r\n        &.file{\r\n\r\n            &:before{\r\n                padding: 5px 10px;\r\n                font-size: 12px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .description,\r\n    .error-message{\r\n        font-size: 10px;\r\n        line-height: 13px;\r\n    }\r\n}\r\n\r\n.large{\r\n\r\n    label{\r\n        font-size: 16px;\r\n        line-height: 21px;\r\n\r\n        & > i{\r\n\r\n            .help{\r\n                padding: 8px;\r\n                width: 120px;\r\n                font-size: 14px;\r\n                line-height: 12px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .input-field-wrapper{\r\n        input{\r\n            padding: 12px 16px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n\r\n            &.credit-card,\r\n            &.icon,\r\n            &.image{\r\n                padding-left: 52px;\r\n            }\r\n\r\n            &[type='file']{\r\n                padding-left: 60px;\r\n            }\r\n\r\n            &.error-clear{\r\n                padding-right: 35px;\r\n            }\r\n        }\r\n\r\n        .error-dismiss{\r\n            top: 15px;\r\n            right: 12px;\r\n            font-size: 16px;\r\n        }\r\n\r\n        .tag{\r\n            top: 8px;\r\n            left: 8px;\r\n            padding: 4px 8px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n        }\r\n\r\n        .input-detail{\r\n            top: 12px;\r\n            right: 16px;\r\n            font-size: 16px;\r\n            line-height: 21px;\r\n        }\r\n\r\n        .field-icon{\r\n            top: 11px;\r\n            left: 16px;\r\n            font-size: 24px;\r\n\r\n            img{\r\n                top: -5px;\r\n                width: 24px;\r\n            }\r\n        }\r\n\r\n        .select{\r\n            top: 8px;\r\n            left: 8px;\r\n\r\n            & > div:not(.dropdown){\r\n                font-size: 16px;\r\n                line-height: 21px;\r\n                gap: 8px;\r\n                padding: 4px 28px 4px 8px;\r\n\r\n                &:before{\r\n                    top: 5px;\r\n                    right: 8px;\r\n                    font-size: 12px;\r\n                }\r\n            }\r\n\r\n            .dropdown{\r\n                top: 13px;\r\n\r\n                .option{\r\n                    font-size: 16px;\r\n                    line-height: 21px;\r\n                }\r\n            }\r\n\r\n            img{\r\n                height: 20px;\r\n            }\r\n        }\r\n\r\n        &.file{\r\n\r\n            &:before{\r\n                padding: 10px 14px;\r\n                font-size: 20px;\r\n            }\r\n        }\r\n    }\r\n}",
                     "styleUrl": "./input-field.component.scss"
                 }
             ],
@@ -760,7 +760,7 @@
                 "AfterViewInit",
                 "OnChanges"
             ],
-            "templateData": "<div class=\"{{size}} {{extraClasses}}\">\r\n    <label *ngIf=\"label\" for=\"{{id}}\">\r\n        {{label}}\r\n        <i *ngIf=\"help\" class=\"ti-ux-help-outline\">\r\n            <span class=\"help\">{{help}}</span>\r\n        </i>\r\n    </label>\r\n\r\n    <div class=\"input-field-wrapper {{type}}\">\r\n        <input *ngIf=\"type != 'creditCard' && type != 'phone'\" type=\"{{type}}\" placeholder=\"{{placeholder}}\"\r\n            [(ngModel)]=\"value\" id=\"{{id}}\" [attr.disabled]=\"isDisabled ? '' : null\" [class.error]=\"hasError\"\r\n            [class.error-clear]=\"value\" [class.has-detail]=\"detailLabel\" [ngStyle]=\"extraStyles\" />\r\n\r\n        <input *ngIf=\"type == 'creditCard' || type == 'phone'\" type=\"text\" placeholder=\"{{placeholder}}\"\r\n            [(ngModel)]=\"printedValue\" id=\"{{id}}\" [attr.disabled]=\"isDisabled ? '' : null\"\r\n            [class.credit-card]=\"type == 'creditCard'\" [class.error]=\"hasError\" [class.error-clear]=\"value\"\r\n            [ngStyle]=\"extraStyles\" (keypress)=\"formatFieldInput($event, type)\" (blur)=\"reformatField()\" />\r\n\r\n        <div *ngIf=\"hasError && value && type != 'file'\" class=\"error-dismiss ti-ux-close\" (click)=\"clearValue()\"></div>\r\n        <a #detailEl *ngIf=\"!hasError && detailLabel\" class=\"input-detail\" href=\"{{detailUrl}}\">{{detailLabel}}</a>\r\n        <div #tagEl *ngIf=\"!hasError && tag && !options.length\" class=\"tag\">{{tag}}</div>\r\n\r\n        <div class=\"select\" *ngIf=\"options.length\" [class.open]=\"selectIsOpen\">\r\n            <div #selectEl [attr.data-value]=\"selectedOption.value\" (click)=\"toggleSelectOpen()\" [ngStyle]=\"selectStyles\">\r\n                <img *ngIf=\"selectedOption.image\" src=\"{{selectedOption.image}}\" />\r\n                {{selectedOption.label}}\r\n            </div>\r\n            <div #dropdownEl class=\"dropdown\">\r\n                <div class=\"option\" *ngFor=\"let option of options\" [class.selected]=\"option.selected\"\r\n                    (click)=\"selectValue(option.value)\">\r\n                    <img *ngIf=\"option.image\" src=\"{{option.image}}\" />\r\n                    {{option.label}}\r\n                </div>\r\n            </div>\r\n            <select>\r\n                <option *ngFor=\"let option of options\" value=\"{{option.value}}\"\r\n                    [attr.selected]=\"option.selected ? '' : null\">\r\n                    {{option.label}}\r\n                </option>\r\n            </select>\r\n        </div>\r\n\r\n        <div *ngIf=\"type == 'creditCard'\" class=\"credit-card-icon\" [class.ti-ux-overview-outline]=\"!ccImage\">\r\n            <img *ngIf=\"ccImage\" src=\"../assets/ccImages/{{ccImage}}.svg\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"description\" class=\"description\">{{description}}</div>\r\n    <div *ngIf=\"hasError\" class=\"error-message\">{{errorMessage}}</div>\r\n</div>"
+            "templateData": "<div class=\"{{size}} {{extraClasses}}\">\r\n    <label *ngIf=\"label\" for=\"{{id}}\">\r\n        {{label}}\r\n        <i *ngIf=\"help\" class=\"ti-ux-help-outline\">\r\n            <span class=\"help\">{{help}}</span>\r\n        </i>\r\n    </label>\r\n\r\n    <div class=\"input-field-wrapper {{type}}\">\r\n        <input  *ngIf=\"type != 'creditCard' && type != 'phone'\" \r\n                type=\"{{type}}\" \r\n                placeholder=\"{{placeholder}}\"\r\n                [(ngModel)]=\"value\" \r\n                id=\"{{id}}\" \r\n                [attr.disabled]=\"isDisabled ? '' : null\" \r\n                [class.icon]=\"icon\" \r\n                [class.image]=\"image\" \r\n                [class.error]=\"hasError\"\r\n                [class.error-clear]=\"value\" \r\n                [class.has-detail]=\"detailLabel\" \r\n                [ngStyle]=\"extraStyles\" />\r\n\r\n        <input  *ngIf=\"type == 'creditCard' || type == 'phone'\" \r\n                type=\"text\" \r\n                placeholder=\"{{placeholder}}\"\r\n                [(ngModel)]=\"printedValue\" id=\"{{id}}\" \r\n                [attr.disabled]=\"isDisabled ? '' : null\"\r\n                class=\"{{type}}\"\r\n                [class.credit-card]=\"type == 'creditCard'\" \r\n                [class.error]=\"hasError\" \r\n                [class.error-clear]=\"value\"\r\n                [ngStyle]=\"extraStyles\" \r\n                (keypress)=\"formatFieldInput($event, type)\" \r\n                (blur)=\"reformatField()\" />\r\n\r\n        <div *ngIf=\"hasError && value && type != 'file'\" class=\"error-dismiss ti-ux-close\" (click)=\"clearValue()\"></div>\r\n        <a #detailEl *ngIf=\"!hasError && detailLabel\" class=\"input-detail\" href=\"{{detailUrl}}\">{{detailLabel}}</a>\r\n        <div #tagEl *ngIf=\"tag && !options.length\" class=\"tag\">{{tag}}</div>\r\n\r\n        <div class=\"select\" *ngIf=\"options.length\" [class.open]=\"selectIsOpen\">\r\n            <div #selectEl [attr.data-value]=\"selectedOption.value\" (click)=\"toggleSelectOpen()\" [ngStyle]=\"selectStyles\">\r\n                <img *ngIf=\"selectedOption.image\" src=\"{{selectedOption.image}}\" />\r\n                {{selectedOption.label}}\r\n            </div>\r\n            <div #dropdownEl class=\"dropdown\">\r\n                <div class=\"option\" *ngFor=\"let option of options\" [class.selected]=\"option.selected\"\r\n                    (click)=\"selectValue(option.value)\">\r\n                    <img *ngIf=\"option.image\" src=\"{{option.image}}\" />\r\n                    {{option.label}}\r\n                </div>\r\n            </div>\r\n            <select>\r\n                <option *ngFor=\"let option of options\" value=\"{{option.value}}\"\r\n                    [attr.selected]=\"option.selected ? '' : null\">\r\n                    {{option.label}}\r\n                </option>\r\n            </select>\r\n        </div>\r\n\r\n        <div *ngIf=\"type == 'creditCard'\" class=\"field-icon\" [class.ti-ux-overview-outline]=\"!ccImage\">\r\n            <img *ngIf=\"ccImage\" src=\"../assets/ccImages/{{ccImage}}.svg\" />\r\n        </div>\r\n\r\n        <div *ngIf=\"(icon || image) && type != 'creditCard'\" class=\"field-icon {{icon}}\">\r\n            <img *ngIf=\"image\" src=\"{{image}}\" />\r\n        </div>\r\n    </div>\r\n\r\n    <div *ngIf=\"description\" class=\"description\">{{description}}</div>\r\n    <div *ngIf=\"hasError\" class=\"error-message\">{{errorMessage}}</div>\r\n</div>"
         }
     ],
     "modules": [
@@ -858,6 +858,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Button",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -866,6 +876,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "CreditCard",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Default",
@@ -881,6 +901,16 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -888,14 +918,54 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "environment",
+                "name": "HelpMessage",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/stories/InputField.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Image",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Link",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "PhoneNumber",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "PrimaryFilled",
@@ -947,14 +1017,34 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Template",
+                "name": "Select",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/InputField.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SelectWithImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Tag",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Template",
@@ -967,10 +1057,30 @@
                 "defaultValue": "(args: InputFieldComponent) => ({\r\n    props: args,\r\n})"
             },
             {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
                 "name": "Tertiary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Tooltip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputField.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -981,6 +1091,138 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/InputField.stories.ts": [
+                {
+                    "name": "Button",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "CreditCard",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "HelpMessage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Icon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Image",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Link",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "PhoneNumber",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Select",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SelectWithImage",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Tag",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<InputFieldComponent>",
+                    "defaultValue": "(args: InputFieldComponent) => ({\r\n    props: args,\r\n})"
+                },
+                {
+                    "name": "Tooltip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputField.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -1002,26 +1244,16 @@
                     "type": "literal type"
                 }
             ],
-            "src/stories/InputField.stories.ts": [
+            "src/environments/environment.prod.ts": [
                 {
-                    "name": "Default",
+                    "name": "environment",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/InputField.stories.ts",
+                    "file": "src/environments/environment.prod.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/InputField.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<InputFieldComponent>",
-                    "defaultValue": "(args: InputFieldComponent) => ({\r\n    props: args,\r\n})"
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/environments/environment.ts": [
@@ -1034,18 +1266,6 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
-                }
-            ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -1245,6 +1465,26 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Button",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CreditCard",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -1255,7 +1495,97 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "HelpMessage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Link",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PhoneNumber",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Select",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SelectWithImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Tag",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputField.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Tooltip",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

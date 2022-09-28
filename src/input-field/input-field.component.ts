@@ -26,12 +26,10 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
   @Input() image = '';
   @Input() isDisabled = false;
   @Input() hasError = false;
-  @Input() errorMessage = 'Please fill, it can\'t be empty';
-  @Input() creditCardImage = false;
+  @Input() errorMessage = `Please fill, it can't be empty`;
   @Input() detailLabel = '';
   @Input() detailUrl = '';
   @Input() options: any[] = []; // Format: [{value: 'passport', label: 'Passport', image: 'path/to/image.svg', selected: true|false}]
-  @Input() selectOptions = ''; // each option can have an image
   @Input() option = '';
   @Input() type = 'text'; // text | file | number | password | creditCard | phone
   @Input() size = 'regular'; // small | regular | large

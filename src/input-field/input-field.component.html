@@ -35,7 +35,7 @@
 
         <div *ngIf="hasError && value && type != 'file'" class="error-dismiss ti-ux-close" (click)="clearValue()"></div>
         <a #detailEl *ngIf="!hasError && detailLabel" class="input-detail" href="{{detailUrl}}">{{detailLabel}}</a>
-        <div #tagEl *ngIf="!hasError && tag && !options.length" class="tag">{{tag}}</div>
+        <div #tagEl *ngIf="tag && !options.length" class="tag">{{tag}}</div>
 
         <div class="select" *ngIf="options.length" [class.open]="selectIsOpen">
             <div #selectEl [attr.data-value]="selectedOption.value" (click)="toggleSelectOpen()" [ngStyle]="selectStyles">

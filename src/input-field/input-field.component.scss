@@ -309,6 +309,14 @@ label{
             &[type='file']{
                 padding-left: 40px;
             }
+
+            &.error-clear{
+                padding-right: 25px;
+            }
+        }
+
+        .error-dismiss{
+            top: 7px;
         }
 
         .tag{
@@ -414,6 +422,16 @@ label{
             &[type='file']{
                 padding-left: 60px;
             }
+
+            &.error-clear{
+                padding-right: 35px;
+            }
+        }
+
+        .error-dismiss{
+            top: 15px;
+            right: 12px;
+            font-size: 16px;
         }
 
         .tag{
