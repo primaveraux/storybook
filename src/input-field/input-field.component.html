@@ -1,0 +1,71 @@
+<div class="{{size}} {{extraClasses}}">
+    <label *ngIf="label" for="{{id}}">
+        {{label}}
+        <i *ngIf="help" class="ti-ux-help-outline">
+            <span class="help">{{help}}</span>
+        </i>
+    </label>
+
+    <div class="input-field-wrapper {{type}}">
+        <input  *ngIf="type != 'creditCard' && type != 'phone'" 
+                type="{{type}}" 
+                placeholder="{{placeholder}}"
+                [(ngModel)]="value" 
+                id="{{id}}" 
+                [attr.disabled]="isDisabled ? '' : null" 
+                [class.icon]="icon" 
+                [class.image]="image" 
+                [class.error]="hasError"
+                [class.error-clear]="value" 
+                [class.has-detail]="detailLabel" 
+                [ngStyle]="extraStyles" />
+
+        <input  *ngIf="type == 'creditCard' || type == 'phone'" 
+                type="text" 
+                placeholder="{{placeholder}}"
+                [(ngModel)]="printedValue" id="{{id}}" 
+                [attr.disabled]="isDisabled ? '' : null"
+                class="{{type}}"
+                [class.credit-card]="type == 'creditCard'" 
+                [class.error]="hasError" 
+                [class.error-clear]="value"
+                [ngStyle]="extraStyles" 
+                (keypress)="formatFieldInput($event, type)" 
+                (blur)="reformatField()" />
+
+        <div *ngIf="hasError && value && type != 'file'" class="error-dismiss ti-ux-close" (click)="clearValue()"></div>
+        <a #detailEl *ngIf="!hasError && detailLabel" class="input-detail" href="{{detailUrl}}">{{detailLabel}}</a>
+        <div #tagEl *ngIf="!hasError && tag && !options.length" class="tag">{{tag}}</div>
+
+        <div class="select" *ngIf="options.length" [class.open]="selectIsOpen">
+            <div #selectEl [attr.data-value]="selectedOption.value" (click)="toggleSelectOpen()" [ngStyle]="selectStyles">
+                <img *ngIf="selectedOption.image" src="{{selectedOption.image}}" />
+                {{selectedOption.label}}
+            </div>
+            <div #dropdownEl class="dropdown">
+                <div class="option" *ngFor="let option of options" [class.selected]="option.selected"
+                    (click)="selectValue(option.value)">
+                    <img *ngIf="option.image" src="{{option.image}}" />
+                    {{option.label}}
+                </div>
+            </div>
+            <select>
+                <option *ngFor="let option of options" value="{{option.value}}"
+                    [attr.selected]="option.selected ? '' : null">
+                    {{option.label}}
+                </option>
+            </select>
+        </div>
+
+        <div *ngIf="type == 'creditCard'" class="field-icon" [class.ti-ux-overview-outline]="!ccImage">
+            <img *ngIf="ccImage" src="../assets/ccImages/{{ccImage}}.svg" />
+        </div>
+
+        <div *ngIf="(icon || image) && type != 'creditCard'" class="field-icon {{icon}}">
+            <img *ngIf="image" src="{{image}}" />
+        </div>
+    </div>
+
+    <div *ngIf="description" class="description">{{description}}</div>
+    <div *ngIf="hasError" class="error-message">{{errorMessage}}</div>
+</div>
