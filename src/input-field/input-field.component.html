@@ -58,7 +58,7 @@
         </div>
 
         <div *ngIf="type == 'creditCard'" class="field-icon" [class.ti-ux-overview-outline]="!ccImage">
-            <img *ngIf="ccImage" src="../assets/ccImages/{{ccImage}}.svg" />
+            <img *ngIf="ccImage" src="./assets/ccImages/{{ccImage}}.svg" />
         </div>
 
         <div *ngIf="(icon || image) && type != 'creditCard'" class="field-icon {{icon}}">

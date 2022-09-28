@@ -231,7 +231,7 @@ Image.args = {
     placeholder: 'Ex: João Peixoto',
     label: 'Image',
     options: [],
-    image: '../assets/flags/es.svg'
+    image: './assets/flags/es.svg'
 };
 Image.argTypes = {
     options: { table: { disable: true } },
@@ -299,17 +299,17 @@ SelectWithImage.args = {
         {
             value: 'pt',
             label: '+ 351',
-            image: '../assets/flags/pt.svg'
+            image: './assets/flags/pt.svg'
         },
         {
             value: 'es',
             label: '+ 34',
-            image: '../assets/flags/es.svg'
+            image: './assets/flags/es.svg'
         },
         {
             value: 'uk',
             label: '+ 44',
-            image: '../assets/flags/uk.svg'
+            image: './assets/flags/uk.svg'
         }
     ]
 };
@@ -332,17 +332,17 @@ PhoneNumber.args = {
         {
             value: 'pt',
             label: '+ 351',
-            image: '../assets/flags/pt.svg'
+            image: './assets/flags/pt.svg'
         },
         {
             value: 'es',
             label: '+ 34',
-            image: '../assets/flags/es.svg'
+            image: './assets/flags/es.svg'
         },
         {
             value: 'uk',
             label: '+ 44',
-            image: '../assets/flags/uk.svg'
+            image: './assets/flags/uk.svg'
         }
     ]
 };
