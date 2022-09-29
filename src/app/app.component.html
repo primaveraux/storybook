@@ -1,15 +1,6 @@
 <pri-button></pri-button>
 <br>
-<pri-input-field size="large" label="Entidade (com valor)" value="Diana Mendes" placeholder="Ex: João Peixoto" help="Helpful tip about this input"></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (sem valor)" placeholder="Ex: João Peixoto"></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (com erro)" placeholder="Ex: João Peixoto" [hasError]="true"></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (desativado)" value="Diana Mendes" placeholder="Ex: João Peixoto" [isDisabled]="true"></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (com link de detalhe)" value="Diana Mendes" placeholder="Ex: João Peixoto" detailLabel="Ver detalhe"></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (com descrição)" value="Diana Mendes" placeholder="Ex: João Peixoto" description="Some short message about the information of this input to help the user to fill it."></pri-input-field><br>
-<pri-input-field size="large" label="Entidade (com tag)" value="Diana Mendes" placeholder="Ex: João Peixoto" tag="00efhedthb1"></pri-input-field><br>
-<pri-input-field size="large" label="Cartão de Crédito" placeholder="1234 5678 9012" type="creditCard"></pri-input-field><br>
-<pri-input-field size="large" label="Icon" value="Diana Mendes" placeholder="Ex: João Peixoto" icon="ti-ux-catalog-outline"></pri-input-field><br>
-<pri-input-field size="large" label="Imagem" value="Diana Mendes" placeholder="Ex: João Peixoto" image="./assets/flags/es.svg"></pri-input-field><br>
-<pri-input-field size="large" label="Identificação (com select sem imagens)" value="4D8G84J2ND1" placeholder="Ex: João Peixoto" [options]="documents" option="passport"></pri-input-field><br>
-<pri-input-field size="large" label="Telefone (com select com imagens)" placeholder="912 345 678" [options]="indicativos" option="uk" type="phone"></pri-input-field><br>
-<pri-input-field size="large" label="Ficheiro (upload de ficheiros)" placeholder="Ex: João Peixoto" type="file"></pri-input-field><br>
+<pri-input-field></pri-input-field><br>
+<pri-input-field type="number" tag="€" [min]="0" placeholder="0.00"></pri-input-field><br>
+<pri-input-number [isDisabled]="true" tag="€" [min]="0" value="2.4" placeholder="0.00"></pri-input-number><br>
+<pri-input-number [isDisabled]="true" tag="€" [min]="0" value="3" placeholder="0.00" type="numberSecondary"></pri-input-number><br>

@@ -18,6 +18,9 @@ export default {
     // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
     argTypes: {
         type: { table: { disable: true } },
+        value: { table: { disable: true } },
+        id: { table: { disable: true } },
+        extraClasses: { table: { disable: true } },
         ccImage: { table: { disable: true } },
         printedValue: { table: { disable: true } },
         selectedOption: { table: { disable: true } },
@@ -39,6 +42,16 @@ export default {
         dropdownEl: { table: { disable: true } },
         selectEl: { table: { disable: true } },
         tagEl: { table: { disable: true } },
+        detailElVar: { table: { disable: true } },
+        tagElVar: { table: { disable: true } },
+        ngAfterViewChecked: { table: { disable: true } },
+        min: { table: { disable: true } },
+        max: { table: { disable: true } },
+        elementType: { table: { disable: true } },
+        mainExtraStyles: { table: { disable: true } },
+        changeValue: { table: { disable: true } },
+        mainEl: { table: { disable: true } },
+        wrapperEl: { table: { disable: true } },
         size: {
             name: "Size",
             description: "Select this button's size.",
@@ -68,29 +81,17 @@ export default {
             name: "Error message",
             description: "Insert an error message to show when the field has an error."
         },
-        extraClasses: {
-            name: "Extra classes",
-            description: "Insert any extra classes that you wish this field to have."
-        },
         hasError: {
             name: "Has error",
             description: "Choose wether this field has an error or not."
         },
         help: {
-            name: "Help",
+            name: "Help Text (Tooltip)",
             description: "Insert an help text that will be shown when hovering the help icon."
-        },
-        id: {
-            name: "ID",
-            description: "Insert this field's ID."
         },
         isDisabled: {
             name: "Is disabled",
             description: "Select wether this field is disabled or not."
-        },
-        value: {
-            name: "Value",
-            description: "Insert this field's default value."
         },
         options: {
             name: "Options",

@@ -8,6 +8,7 @@ import { AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ElementR
 export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnChanges {
 
   extraStyles: {};
+  mainExtraStyles: {};
   selectStyles: {};
   printedValue: string;
   ccImage: string;
@@ -15,7 +16,7 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
   selectedOption: any;
   tagElVar: ElementRef;
   detailElVar: ElementRef;
-  loadCount: number = 0;
+  elementType: string;
 
   @Input() id = '';
   @Input() value = '';
@@ -34,11 +35,14 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
   @Input() detailUrl = '';
   @Input() options: any[] = []; // Format: [{value: 'passport', label: 'Passport', image: 'path/to/image.svg', selected: true|false}]
   @Input() option = '';
-  @Input() type = 'text'; // text | file | number | password | creditCard | phone
+  @Input() min = 0;
+  @Input() max = 99999999999;
+  @Input() type = 'text'; // text | file | number | numberSecondary | password | creditCard | phone
   @Input() size = 'regular'; // small | regular | large
 
   constructor(private cd: ChangeDetectorRef) {
     this.extraStyles = {};
+    this.mainExtraStyles = {};
     this.selectStyles = {};
     this.printedValue = this.value;
     this.ccImage = "";
@@ -46,9 +50,16 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
     this.selectedOption = { value: '', label: '', image: '' };
     this.tagElVar = this.tagEl;
     this.detailElVar = this.detailEl;
+    this.elementType = this.type;
 
     this.creditCardType();
   }
+
+  @ViewChild('mainEl')
+  mainEl: ElementRef = ViewChild('mainEl');
+
+  @ViewChild('wrapperEl')
+  wrapperEl: ElementRef = ViewChild('wrapperEl');
 
   @ViewChild('detailEl')
   detailEl: ElementRef = ViewChild('detailEl');
@@ -69,6 +80,10 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
 
   ngAfterViewInit() {
     this.setExtraStyles();
+    this.elementType = this.type != 'numberSecondary' ? this.type : 'number';
+
+    if (this.type == 'number')
+      this.value = parseFloat(this.value).toFixed(2);
 
     if (this.type == 'creditCard' || this.type == 'phone')
       this.formatValue(this.type);
@@ -131,6 +146,15 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
       this.extraStyles = {
         ...this.extraStyles,
         'padding-left': selectPadding + 'px'
+      };
+    }
+
+    if (typeof this.wrapperEl == 'object') {
+      let mainWidth = this.wrapperEl.nativeElement.offsetWidth;
+
+      this.mainExtraStyles = {
+        ...this.mainExtraStyles,
+        'width': mainWidth + 'px'
       };
     }
 
@@ -285,6 +309,26 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
   // Clear the value variable
   clearValue() {
     this.value = "";
+  }
+
+  // Change the value according to the passed number
+  changeValue(difference: number = 0) {
+    if (this.elementType == "number") {
+      let newValue = Number(this.value) + difference;
+
+      if (isNaN(newValue))
+        newValue = difference;
+
+      if (newValue <= this.max && newValue >= this.min)
+        this.value = String(newValue);
+      else if (newValue > this.max)
+        this.value = String(this.max);
+      else if (newValue < this.min)
+        this.value = String(this.min);
+
+      if (this.type == "number")
+        this.value = parseFloat(this.value).toFixed(2);
+    }
   }
 
 }

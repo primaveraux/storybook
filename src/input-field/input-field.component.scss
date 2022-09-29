@@ -77,6 +77,7 @@
             &:disabled{
                 color: var(--grey-6);
                 background-color: var(--grey-3);
+                pointer-events: none;
             }
 
             &.error{
@@ -102,6 +103,19 @@
                     display: none;
                 }
             }
+
+            &[type='number']{
+                padding-right: 32px;
+                width: 150px;
+                text-align: right;
+                -moz-appearance: textfield;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button{
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
         }
 
         &.file{
@@ -118,7 +132,6 @@
                 color: var(--grey-7);
                 background-color: var(--grey-4);
                 box-sizing: border-box;
-                border-radius: 4px 0 0 4px;
                 transition: background-color 0.3s, color 0.3s;
                 pointer-events: none;
             }
@@ -128,6 +141,18 @@
                 &:before{
                     background-color: var(--theme-20);
                     color: var(--grey-8);
+                }
+            }
+        }
+
+        &.number,
+        &.numberSecondary{
+            width: 150px;
+
+            &.numberSecondary{
+
+                input{
+                    text-align: center;
                 }
             }
         }
@@ -166,6 +191,11 @@
             color: var(--grey-7);
             background-color: var(--grey-3);
             border-radius: 4px;
+
+            &.disabled{
+                color: var(--grey-7) !important;
+                background-color: var(--grey-1) !important;
+            }
         }
 
         .field-icon{
@@ -278,6 +308,86 @@
                 }
             }
         }
+
+        .number-controls{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 10px;
+            color: var(--grey-8);
+
+            & > div{
+                cursor: pointer;
+
+                &.disabled{
+                    color: var(--grey-6);
+                    pointer-events: none;
+                }
+            }
+
+            &.disabled{
+
+                & > div{
+                    color: var(--grey-6) !important;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        &.numberSecondary{
+
+            input{
+                padding-right: 34px;
+                padding-left: 34px;
+            }
+
+            .number-controls{
+                top: 0;
+                right: unset;
+                left: 0;
+                display: block;
+                width: 100%;
+                font-size: 12px;
+                color: var(--theme-100);
+
+                & > div{
+                    position: absolute;
+                    top: 7px;
+                    right: 6px;
+                    height: 22px;
+                    width: 22px;
+                    color: var(--theme-100);
+                    line-height: 22px;
+                    text-align: center;
+                    background-color: var(--theme-20);
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    &.value-down{
+                        right: unset;
+                        left: 6px;
+                    }
+
+                    &.disabled{
+                        color: var(--grey-7);
+                        background-color: var(--grey-3);
+                        pointer-events: none;
+                    }
+                }
+
+                &.disabled{
+                    
+                    & > div{
+                        color: var(--grey-6) !important;
+                        background-color: var(--grey-1) !important;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
     }
 
     .error-message{
@@ -307,6 +417,7 @@
         }
 
         .input-field-wrapper{
+
             input{
                 padding: 4px 8px;
                 font-size: 12px;
@@ -391,6 +502,43 @@
                 &:before{
                     padding: 5px 10px;
                     font-size: 12px;
+                }
+            }
+
+            &.numberSecondary{
+
+                input{
+                    padding: 4px 26px;
+                }
+
+                .number-controls{
+                    font-size: 8px;
+
+                    & > div{
+                        top: 5px;
+                        right: 5px;
+                        height: 16px;
+                        width: 16px;
+                        line-height: 16px;
+
+                        &.value-down{
+                            left: 5px;
+                        }
+                    }
+                }
+            }
+
+            &.number{
+
+                input{
+                    padding-right: 18px;
+                }
+
+                .number-controls{
+                    top: 5px;
+                    right: 5px;
+                    gap: 0;
+                    font-size: 8px;
                 }
             }
         }
@@ -508,6 +656,44 @@
                 &:before{
                     padding: 10px 14px;
                     font-size: 20px;
+                }
+            }
+
+            &.numberSecondary{
+
+                input{
+                    padding-left: 42px;
+                    padding-right: 42px;
+                }
+
+                .number-controls{
+                    font-size: 16px;
+
+                    & > div{
+                        top: 8px;
+                        right: 8px;
+                        height: 30px;
+                        width: 30px;
+                        line-height: 30px;
+
+                        &.value-down{
+                            left: 8px;
+                        }
+                    }
+                }
+            }
+
+            &.number{
+
+                input{
+                    padding-right: 32px;
+                }
+
+                .number-controls{
+                    top: 11px;
+                    right: 10px;
+                    gap: 0;
+                    font-size: 12px;
                 }
             }
         }

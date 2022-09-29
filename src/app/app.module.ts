@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { ButtonComponent } from 'src/button/button.component';
 import { InputFieldComponent } from 'src/input-field/input-field.component';
+import { InputNumberComponent } from '../input-number/input-number.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     ButtonComponent,
-    InputFieldComponent
+    InputFieldComponent,
+    InputNumberComponent
   ],
   imports: [
     BrowserModule,

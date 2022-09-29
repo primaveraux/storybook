@@ -1,4 +1,4 @@
-<div class="input-field {{size}} {{extraClasses}}">
+<div #mainEl class="input-field {{size}} {{extraClasses}}" [ngStyle]="mainExtraStyles">
     <label *ngIf="label" for="{{id}}">
         {{label}}
         <i *ngIf="help" class="ti-ux-help-outline">
@@ -6,9 +6,9 @@
         </i>
     </label>
 
-    <div class="input-field-wrapper {{type}}">
+    <div #wrapperEl class="input-field-wrapper {{type}}">
         <input  *ngIf="type != 'creditCard' && type != 'phone'" 
-                type="{{type}}" 
+                type="{{elementType}}" 
                 placeholder="{{placeholder}}"
                 [(ngModel)]="value" 
                 id="{{id}}" 
@@ -16,9 +16,12 @@
                 [class.icon]="icon" 
                 [class.image]="image" 
                 [class.error]="hasError"
-                [class.error-clear]="value" 
+                [class.error-clear]="value && elementType != 'number'" 
                 [class.has-detail]="detailLabel" 
-                [ngStyle]="extraStyles" />
+                [ngStyle]="extraStyles"
+                min="{{min}}"
+                max="{{max}}"
+                (change)="changeValue()" />
 
         <input  *ngIf="type == 'creditCard' || type == 'phone'" 
                 type="text" 
@@ -33,9 +36,9 @@
                 (keypress)="formatFieldInput($event, type)" 
                 (blur)="reformatField()" />
 
-        <div *ngIf="hasError && value && type != 'file'" class="error-dismiss ti-ux-close" (click)="clearValue()"></div>
+        <div *ngIf="hasError && value && type != 'file' && elementType != 'number'" class="error-dismiss ti-ux-close" (click)="clearValue()"></div>
         <a #detailEl *ngIf="!hasError && detailLabel" class="input-detail" href="{{detailUrl}}">{{detailLabel}}</a>
-        <div #tagEl *ngIf="tag && !options.length" class="tag">{{tag}}</div>
+        <div #tagEl *ngIf="tag && !options.length && type != 'numberSecondary' && !icon" class="tag"  [class.disabled]="isDisabled">{{tag}}</div>
 
         <div class="select" *ngIf="options.length" [class.open]="selectIsOpen">
             <div #selectEl [attr.data-value]="selectedOption.value" (click)="toggleSelectOpen()" [ngStyle]="selectStyles">
@@ -61,8 +64,22 @@
             <img *ngIf="ccImage" src="./assets/ccImages/{{ccImage}}.svg" />
         </div>
 
-        <div *ngIf="(icon || image) && type != 'creditCard'" class="field-icon {{icon}}">
+        <div *ngIf="(icon || image) && type != 'creditCard' && type != 'numberSecondary'" class="field-icon {{icon}}">
             <img *ngIf="image" src="{{image}}" />
+        </div>
+
+        <div *ngIf="type == 'number' || type == 'numberSecondary'" class="number-controls"  [class.disabled]="isDisabled">
+            <div    class="value-up" 
+                    [class.ti-ux-chevron-up]="type == 'number'"
+                    [class.ti-ux-add]="type == 'numberSecondary'"
+                    [class.disabled]="+value >= max"
+                    (pointerdown)="changeValue(1)"></div>
+
+            <div    class="value-down" 
+                    [class.ti-ux-chevron-down]="type == 'number'"
+                    [class.ti-ux-line]="type == 'numberSecondary'"
+                    [class.disabled]="+value <= min"
+                    (pointerdown)="changeValue(-1)"></div>
         </div>
     </div>
 
