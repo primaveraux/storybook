@@ -245,7 +245,7 @@ export const CreditCard = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 CreditCard.args = {
     type: 'creditCard',
-    placeholder: 'Ex: João Peixoto',
+    placeholder: '1234 5678 9012',
     label: 'Credit Card',
     options: []
 };
@@ -326,7 +326,7 @@ export const PhoneNumber = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 PhoneNumber.args = {
     type: 'phone',
-    placeholder: 'Ex: João Peixoto',
+    placeholder: '912 345 678',
     label: 'Phone number',
     options: [
         {

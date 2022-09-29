@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'pri-input-field',
   templateUrl: './input-field.component.html',
   styleUrls: ['./input-field.component.scss']
 })
-export class InputFieldComponent implements AfterViewInit, OnChanges {
+export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnChanges {
 
   extraStyles: {};
   selectStyles: {};
@@ -13,6 +13,9 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
   ccImage: string;
   selectIsOpen: boolean;
   selectedOption: any;
+  tagElVar: ElementRef;
+  detailElVar: ElementRef;
+  loadCount: number = 0;
 
   @Input() id = '';
   @Input() value = '';
@@ -34,13 +37,15 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
   @Input() type = 'text'; // text | file | number | password | creditCard | phone
   @Input() size = 'regular'; // small | regular | large
 
-  constructor() {
+  constructor(private cd: ChangeDetectorRef) {
     this.extraStyles = {};
     this.selectStyles = {};
     this.printedValue = this.value;
     this.ccImage = "";
     this.selectIsOpen = false;
     this.selectedOption = { value: '', label: '', image: '' };
+    this.tagElVar = this.tagEl;
+    this.detailElVar = this.detailEl;
 
     this.creditCardType();
   }
@@ -59,6 +64,7 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
 
   ngOnChanges() {
     this.updateSelectedOptions();
+    this.setExtraStyles();
   }
 
   ngAfterViewInit() {
@@ -68,25 +74,45 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
       this.formatValue(this.type);
   }
 
-  setExtraStyles(): void {
+  ngAfterViewChecked() {
+    this.setExtraStyles(true);
+  }
+
+  setExtraStyles(fromOnChanges: boolean = false): void {
     // Add styles if the field has a detail's link
-    if (this.detailLabel && typeof this.detailEl == 'object') {
-      let detailWidth = this.detailEl.nativeElement.offsetWidth + (this.detailEl.nativeElement.offsetWidth * 0.08) + 24;
+    if (this.detailLabel && (typeof this.detailEl == 'object' || typeof this.detailElVar == 'object')) {
+      if (typeof this.detailElVar != 'object')
+        this.detailElVar = this.detailEl;
+
+      let extraPadding = 18;
+
+      if (this.size == 'small') {
+        extraPadding = 14;
+      }
+
+      let detailWidth = this.detailElVar.nativeElement.offsetWidth + extraPadding;
 
       this.extraStyles = {
         ...this.extraStyles,
-        'min-width': '300px',
         'padding-right': detailWidth + 'px'
       };
     }
 
     // Add styles if the field has a tag
-    if (this.tag && typeof this.tagEl == 'object') {
-      let tagWidth = this.tagEl.nativeElement.offsetWidth + (this.tagEl.nativeElement.offsetWidth * 0.08) + 14;
+    if (this.tag && (typeof this.tagEl == 'object' || typeof this.tagElVar == 'object')) {
+      if (typeof this.tagElVar != 'object')
+        this.tagElVar = this.tagEl;
+
+      let extraPadding = 12;
+
+      if (this.size == 'small') {
+        extraPadding = 8;
+      }
+
+      let tagWidth = this.tagElVar.nativeElement.offsetWidth + extraPadding;
 
       this.extraStyles = {
         ...this.extraStyles,
-        'min-width': '300px',
         'padding-left': tagWidth + 'px'
       };
     }
@@ -94,33 +120,25 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
     // Add styles if the field has options
     // Assign the "selected" attribute if an option is selected
     if (this.options.length && typeof this.selectEl == 'object') {
-      let extraWidth = 40;
-      let extraPadding = 55;
+      let extraPadding = 12;
 
       if (this.size == 'small') {
-        extraWidth = 25;
-        extraPadding = 35;
-      } else if (this.size == 'large') {
-        extraWidth = 50;
-        extraPadding = 65;
+        extraPadding = 8;
       }
 
-      let selectWidth = this.dropdownEl.nativeElement.offsetWidth + extraWidth;
-      let selectPadding = this.dropdownEl.nativeElement.offsetWidth + extraPadding;
+      let selectPadding = this.selectEl.nativeElement.offsetWidth + extraPadding;
 
       this.extraStyles = {
         ...this.extraStyles,
-        'min-width': '300px',
         'padding-left': selectPadding + 'px'
       };
-
-      this.selectStyles = {
-        ...this.selectStyles,
-        'width': selectWidth + 'px'
-      }
     }
+
+    if (!fromOnChanges)
+      setTimeout(() => this.cd.detectChanges(), 100);
   }
 
+  // Update the selected option when it changes
   updateSelectedOptions() {
     if (this.options.length) {
       let selectedOptions = 0;
@@ -148,14 +166,17 @@ export class InputFieldComponent implements AfterViewInit, OnChanges {
     }
   }
 
+  // Toggle wether the select is open or closed
   toggleSelectOpen() {
     this.selectIsOpen = !this.selectIsOpen;
   }
 
+  // Select a value when clicking on it
   selectValue(value: string) {
     this.option = value;
     this.updateSelectedOptions();
     this.toggleSelectOpen();
+    this.setExtraStyles();
   }
 
   // Return what credit card type the passed string is

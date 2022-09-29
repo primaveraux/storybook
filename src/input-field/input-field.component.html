@@ -1,4 +1,4 @@
-<div class="{{size}} {{extraClasses}}">
+<div class="input-field {{size}} {{extraClasses}}">
     <label *ngIf="label" for="{{id}}">
         {{label}}
         <i *ngIf="help" class="ti-ux-help-outline">
@@ -57,7 +57,7 @@
             </select>
         </div>
 
-        <div *ngIf="type == 'creditCard'" class="field-icon" [class.ti-ux-overview-outline]="!ccImage">
+        <div *ngIf="type == 'creditCard'" class="field-icon" [class.ti-ux-expenses-outline]="!ccImage">
             <img *ngIf="ccImage" src="./assets/ccImages/{{ccImage}}.svg" />
         </div>
 
