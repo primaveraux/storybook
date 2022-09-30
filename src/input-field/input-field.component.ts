@@ -30,7 +30,7 @@ export class InputFieldComponent implements AfterViewChecked, AfterViewInit, OnC
   @Input() image = '';
   @Input() isDisabled = false;
   @Input() hasError = false;
-  @Input() errorMessage = `Please fill, it can't be empty`;
+  @Input() errorMessage = "Please fill, it can't be empty";
   @Input() detailLabel = '';
   @Input() detailUrl = '';
   @Input() options: any[] = []; // Format: [{value: 'passport', label: 'Passport', image: 'path/to/image.svg', selected: true|false}]

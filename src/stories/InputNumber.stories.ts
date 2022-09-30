@@ -91,8 +91,8 @@ export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 Default.args = {
     placeholder: '0.00',
-    label: 'Price',
-    tag: '€',
+    label: 'Width',
+    icon: 'ti-ux-arrows-horizontal',
     help: 'Helpful tip about this input'
 };
 

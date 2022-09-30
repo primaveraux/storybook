@@ -8,6 +8,9 @@ export default {
   component: ButtonComponent,
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   argTypes: {
+    type: { table: { disable: true } },
+    extraClasses: { table: { disable: true } },
+    url: { table: { disable: true } },
     color: {
       name: "Color",
       description: "Select this button's color.",
@@ -23,21 +26,6 @@ export default {
           success: 'Success',
           white: 'White',
           black: 'Black',
-        },
-      },
-    },
-    type: {
-      name: "Type",
-      description: "Select this button's type.",
-      control: {
-        type: 'select',
-        options: ['primaryFilled', 'primaryOutlined', 'secondaryFilled', 'secondaryOutlined', 'tertiary'],
-        labels: {
-          primaryFilled: 'Primary Filled',
-          primaryOutlined: 'Primary Outlined',
-          secondaryFilled: 'Secondary Filled',
-          secondaryOutlined: 'Secondary Outlined',
-          tertiary: 'Tertiary',
         },
       },
     },
@@ -58,10 +46,6 @@ export default {
       name: "Count",
       description: "Number that will appear after the button's text."
     },
-    extraClasses: {
-      name: "Extra Classes",
-      description: "Insert any custom CSS classes that you wish the button to have."
-    },
     icon: {
       name: "Icon",
       description: "Insert Pollen icons class name."
@@ -77,10 +61,6 @@ export default {
     nextButton: {
       name: "Next Button",
       description: "Select if the button should show the 'next' arrow after it's text."
-    },
-    url: {
-      name: "URL",
-      description: "Insert the URL to where this button should point to."
     },
     text: {
       name: "Text",

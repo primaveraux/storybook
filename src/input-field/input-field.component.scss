@@ -131,6 +131,7 @@
                 font-size: 16px;
                 color: var(--grey-7);
                 background-color: var(--grey-4);
+                border-radius: 2px 0 0 2px;
                 box-sizing: border-box;
                 transition: background-color 0.3s, color 0.3s;
                 pointer-events: none;
@@ -318,9 +319,11 @@
             gap: 2px;
             font-size: 10px;
             color: var(--grey-8);
+            transition: all 0.3s;
 
             & > div{
                 cursor: pointer;
+                transition: all 0.3s;
 
                 &.disabled{
                     color: var(--grey-6);

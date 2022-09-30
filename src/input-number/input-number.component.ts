@@ -17,7 +17,7 @@ export class InputNumberComponent implements OnInit {
   @Input() icon = '';
   @Input() isDisabled = false;
   @Input() hasError = false;
-  @Input() errorMessage = `Please fill, it can't be empty`;
+  @Input() errorMessage = "Please fill, it can't be empty";
   @Input() min = 0;
   @Input() max = 99999999999;
   @Input() type = 'number'; // number | numberSecondary
