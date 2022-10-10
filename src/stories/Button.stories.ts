@@ -90,9 +90,7 @@ const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
                   [loading] = "${args.loading}"
                   extraClasses=""
                   ></pri-button>
-              </div>
 
-              <div class='buttons-container'>
                 <pri-button
                   url="#"
                   icon="${args.icon}"
@@ -106,9 +104,7 @@ const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
                   [loading] = "${args.loading}"
                   extraClasses=""
                 ></pri-button>
-              </div>
 
-              <div class='buttons-container'>
                 <pri-button
                   url="#"
                   icon="${args.icon}"
@@ -122,9 +118,7 @@ const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
                   [loading] = "${args.loading}"
                   extraClasses=""
                 ></pri-button>
-              </div>
 
-              <div class='buttons-container'>
                 <pri-button
                   url="#"
                   icon="${args.icon}"
@@ -138,9 +132,7 @@ const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
                   [loading] = "${args.loading}"
                   extraClasses=""
                 ></pri-button>
-              </div>
-
-              <div class='buttons-container'>
+                
                 <pri-button
                   url="#"
                   icon="${args.icon}"

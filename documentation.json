@@ -1277,21 +1277,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "HelpMessage",
@@ -1406,6 +1406,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/InputField.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1423,16 +1433,6 @@
                 "defaultValue": "(args: InputNumberComponent) => ({\r\n    props: args,\r\n})"
             },
             {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
-            },
-            {
                 "name": "TemplateStories",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1440,7 +1440,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n                \n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
             },
             {
                 "name": "Tooltip",
@@ -1642,18 +1642,6 @@
                     "defaultValue": "(args: InputNumberComponent) => ({\r\n    props: args,\r\n})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -1664,6 +1652,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -1695,7 +1695,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n                \n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
                 }
             ]
         },
