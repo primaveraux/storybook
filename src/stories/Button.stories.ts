@@ -74,6 +74,89 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: args,
 });
 
+const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
+  props: args,
+  template: ` <div class='buttons-container'>
+                <pri-button
+                  url="#"
+                  icon="${args.icon}"
+                  text="${args.text}"
+                  size="${args.size}"
+                  type="primaryFilled"
+                  color="${args.color}"
+                  [count] = "${args.count}"
+                  [nextButton] = "${args.nextButton}"
+                  [isDisabled] = "${args.isDisabled}"
+                  [loading] = "${args.loading}"
+                  extraClasses=""
+                  ></pri-button>
+              </div>
+
+              <div class='buttons-container'>
+                <pri-button
+                  url="#"
+                  icon="${args.icon}"
+                  text="${args.text}"
+                  size="${args.size}"
+                  type="primaryOutlined"
+                  color="${args.color}"
+                  [count] = "${args.count}"
+                  [nextButton] = "${args.nextButton}"
+                  [isDisabled] = "${args.isDisabled}"
+                  [loading] = "${args.loading}"
+                  extraClasses=""
+                ></pri-button>
+              </div>
+
+              <div class='buttons-container'>
+                <pri-button
+                  url="#"
+                  icon="${args.icon}"
+                  text="${args.text}"
+                  size="${args.size}"
+                  type="secondaryFilled"
+                  color="${args.color}"
+                  [count] = "${args.count}"
+                  [nextButton] = "${args.nextButton}"
+                  [isDisabled] = "${args.isDisabled}"
+                  [loading] = "${args.loading}"
+                  extraClasses=""
+                ></pri-button>
+              </div>
+
+              <div class='buttons-container'>
+                <pri-button
+                  url="#"
+                  icon="${args.icon}"
+                  text="${args.text}"
+                  size="${args.size}"
+                  type="secondaryOutlined"
+                  color="${args.color}"
+                  [count] = "${args.count}"
+                  [nextButton] = "${args.nextButton}"
+                  [isDisabled] = "${args.isDisabled}"
+                  [loading] = "${args.loading}"
+                  extraClasses=""
+                ></pri-button>
+              </div>
+
+              <div class='buttons-container'>
+                <pri-button
+                  url="#"
+                  icon="${args.icon}"
+                  text="${args.text}"
+                  size="${args.size}"
+                  type="tertiary"
+                  color="${args.color}"
+                  [count] = "${args.count}"
+                  [nextButton] = "${args.nextButton}"
+                  [isDisabled] = "${args.isDisabled}"
+                  [loading] = "${args.loading}"
+                  extraClasses=""
+                ></pri-button>
+              </div>`
+});
+
 export const PrimaryFilled = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 PrimaryFilled.args = {
@@ -103,3 +186,5 @@ export const Tertiary = Template.bind({});
 Tertiary.args = {
   type: 'tertiary'
 };
+
+export const Stories = TemplateStories.bind({});
