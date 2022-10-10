@@ -157,6 +157,10 @@ const TemplateStories: Story<ButtonComponent> = (args: ButtonComponent) => ({
               </div>`
 });
 
+export const Primary = TemplateStories.bind({});
+
+/*
+
 export const PrimaryFilled = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 PrimaryFilled.args = {
@@ -187,4 +191,4 @@ Tertiary.args = {
   type: 'tertiary'
 };
 
-export const Stories = TemplateStories.bind({});
+*/

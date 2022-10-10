@@ -1344,24 +1344,14 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "PrimaryFilled",
+                "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "PrimaryOutlined",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "defaultValue": "TemplateStories.bind({})"
             },
             {
                 "name": "require",
@@ -1377,26 +1367,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/InputNumber.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "SecondaryFilled",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "SecondaryOutlined",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1421,16 +1391,6 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Stories",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "TemplateStories.bind({})"
             },
             {
                 "name": "Tag",
@@ -1481,16 +1441,6 @@
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
-            },
-            {
-                "name": "Tertiary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Tooltip",
@@ -1718,47 +1668,7 @@
             ],
             "src/stories/Button.stories.ts": [
                 {
-                    "name": "PrimaryFilled",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "PrimaryOutlined",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "SecondaryFilled",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "SecondaryOutlined",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Stories",
+                    "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/Button.stories.ts",
@@ -1786,16 +1696,6 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: ` <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                  ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"primaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryFilled\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"secondaryOutlined\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>\n\n              <div class='buttons-container'>\n                <pri-button\n                  url=\"#\"\n                  icon=\"${args.icon}\"\n                  text=\"${args.text}\"\n                  size=\"${args.size}\"\n                  type=\"tertiary\"\n                  color=\"${args.color}\"\n                  [count] = \"${args.count}\"\n                  [nextButton] = \"${args.nextButton}\"\n                  [isDisabled] = \"${args.isDisabled}\"\n                  [loading] = \"${args.loading}\"\n                  extraClasses=\"\"\n                ></pri-button>\n              </div>`\n})"
-                },
-                {
-                    "name": "Tertiary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
                 }
             ]
         },
@@ -1882,47 +1782,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "PrimaryFilled",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "PrimaryOutlined",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "SecondaryFilled",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "SecondaryOutlined",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Stories",
+                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1943,16 +1803,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "TemplateStories",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Tertiary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
