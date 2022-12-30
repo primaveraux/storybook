@@ -1,0 +1,13 @@
+<div class="input-field-wrapper {{ options.size }}" data-testid="inputComponent">
+	<input
+		#input
+		type="text"
+		[attr.placeholder]="options.placeholder"
+		[attr.maxlength]="options.maxLength"
+		[attr.disabled]="isDisabled || null"
+		[value]="value"
+		(keyup)="modelChange(input.value)"
+		(focus)="onTouched?.()" />
+
+	<div *ngIf="value && !isDisabled" class="value-dismiss ti-ux-close" (click)="clearValue()"></div>
+</div>

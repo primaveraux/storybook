@@ -1,0 +1,86 @@
+pri-input {
+  &.ng-invalid.ng-touched.ng-dirty {
+    .input-field-wrapper {
+      input {
+        border-color: var(--error-100) !important;
+      }
+    }
+  }
+
+  &.ng-valid,
+  &.ng-untouched,
+  &.ng-pristine {
+    .input-field-wrapper {
+      input {
+        &:hover:not(:focus-visible):not(:focus):not(:disabled) {
+          border-color: var(--grey-5) !important;
+        }
+      }
+    }
+  }
+}
+
+.input-field-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1em;
+
+  input {
+    padding: 0.55em 0.85em;
+    padding-right: 1.7em;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.35em;
+    color: var(--grey-8);
+    background-color: var(--grey-1);
+    border: 1px solid var(--grey-4) !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+
+    &::placeholder {
+      color: var(--grey-6);
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border-color: var(--theme-100) !important;
+    }
+
+    &:disabled {
+      color: var(--grey-6);
+      background-color: var(--grey-3);
+      pointer-events: none;
+    }
+  }
+
+  .value-dismiss {
+    display: none;
+    position: absolute;
+    top: 1.05em;
+    right: 0.8em;
+    font-size: 0.85em;
+    color: var(--grey-8);
+    cursor: pointer;
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  &:has(input:focus) {
+    .value-dismiss {
+      display: block;
+    }
+  }
+
+  &.small {
+    font-size: 0.8em;
+  }
+
+  &.large {
+    font-size: 1.2em;
+  }
+}

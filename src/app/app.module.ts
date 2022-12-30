@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { ButtonComponent } from 'src/button/button.component';
 import { InputFieldComponent } from 'src/input-field/input-field.component';
+import { CheckboxComponent } from '../checkbox';
 import { InputNumberComponent } from '../input-number/input-number.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,14 +14,10 @@ import { AppComponent } from './app.component';
     AppComponent,
     ButtonComponent,
     InputFieldComponent,
-    InputNumberComponent
+    InputNumberComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CheckboxComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

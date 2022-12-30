@@ -1,0 +1,18 @@
+<div class="radio-button-group-wrapper {{ layout }}-layout {{options.size}}">
+	<div class="radio-button-group" *ngFor="let radioButton of model; let i = index">
+		<div class="radio-wrapper">
+			<input
+				id="radio-{{ i }}"
+				type="radio"
+				[value]="radioButton"
+				[disabled]="radioButton.disabled"
+				[(ngModel)]="radioSelected"
+				(change)="onRadioChange()" />
+			<label for="radio-{{ i }}" class="radio-label" [class.disabled]="radioButton.disabled">
+				<i *ngIf="radioButton.icon" [class]="radioButton.icon"></i>
+    			<img *ngIf="radioButton.image" [src]="radioButton.image" />
+				<span>{{ radioButton.description }}</span>
+			</label>
+		</div>
+	</div>
+</div>

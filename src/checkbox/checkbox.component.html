@@ -1,0 +1,7 @@
+<div class="checkbox-wrapper {{options.size}} {{extraClasses}}" [class.disabled]="isDisabled" data-testid="test">
+    <div class="checkbox" [class.active]="selected" [class.indeterminate]="indeterminate" (click)="ToggleCheckbox()">
+        <input type="checkbox" [attr.checked]="selected" />
+    </div>
+    <i *ngIf="options.icon" [class]="options.icon"></i>
+    <img *ngIf="options.image" [src]="options.image" />
+</div>

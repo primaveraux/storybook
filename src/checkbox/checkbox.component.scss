@@ -1,0 +1,86 @@
+pri-checkbox {
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .checkbox {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 1.4em;
+      width: 1.4em;
+      border: 1px solid var(--grey-5);
+      border-radius: 4px;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:after {
+        content: "\e64c";
+        font-family: "pollen";
+        font-size: 0.85em;
+        font-weight: 600;
+        color: var(--grey-1);
+        opacity: 0;
+        transform: scale(1.8);
+        transition: all 0.2s;
+      }
+
+      &.indeterminate {
+        &:after {
+          content: "\e906";
+        }
+      }
+
+      &:hover {
+        border-color: var(--theme-100);
+      }
+
+      &.active {
+        background-color: var(--theme-100);
+        border-color: var(--theme-100);
+
+        &:after {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    & > i {
+      font-size: 1.4em !important;
+    }
+
+    & > img {
+      height: 1.4em;
+    }
+
+    &.disabled {
+      pointer-events: none;
+
+      .checkbox {
+        background-color: var(--grey-2);
+        border-color: var(--grey-4);
+
+        &.active {
+          background-color: var(--grey-4);
+        }
+      }
+    }
+
+    &.small {
+      font-size: 0.8em;
+    }
+
+    &.large {
+      font-size: 1.2em;
+    }
+  }
+}
